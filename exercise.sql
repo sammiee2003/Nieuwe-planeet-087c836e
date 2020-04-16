@@ -5,6 +5,7 @@ USE sterrenstelsel;
 /*SELECT * FROM planeten;*/
 TRUNCATE TABLE  planeten;
 
+ALTER TABLE planeten ADD `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 ALTER TABLE planeten add COLUMN diameter INT;
 ALTER TABLE planeten add COLUMN afstand_tot_de_zon INT;
 ALTER TABLE planeten add COLUMN massa INT;
